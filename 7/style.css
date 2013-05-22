@@ -1,0 +1,30 @@
+body {
+	background: #F1F1F1;
+	color: #3E3E3E;
+	font-family: "Trebuchet MS", "Helvetica";
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #FFF;
+}
+
+.alert{
+	color: red;
+}
+
+.container{
+	float: center;
+	text-align: center;
+	width: 400px;
+	border: 4px double black;
+	background: #C0AE7E;
+	padding: 10px;
+	margin: auto;
+}
+
+.result{
+	text-align: right;
+	border-top: 2px dashed;
+}

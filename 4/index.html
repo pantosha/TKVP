@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html title="Лабораторная работа №4">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+	<title>Лаба №4. Создание формы</title>
+	<h2><center>Форма</center></h2>
+	<table align="center" width="80%">
+	<tr><td><form action="#" method="get">
+		<fieldset>
+			<legend>Личная информация:</legend>
+			<p><input type="email" name="email" placeholder="E-mail" autocomplete="on" required/>
+			<p><input name="name" placeholder="Имя" autocomplete="on" required/>
+			<p><input name="surname" placeholder="Фамилия" autocomplete="on" required/>
+			<p><input name="patronymic" placeholder="Отчество" autocomplete="on"/>
+			<p><input type="date" name="birthday" placeholder="Дата рождения" autocomplete="on" required/>
+			<p><select name="sex">
+				<option disabled selected>Укажите пол</option>
+				<option value="men">Мужчина</option>
+				<option value="women">Женщина</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Предпочтения:</legend>
+			<p><select name="genre">
+				<option disabled selected>Выберите любимый жанр</option>
+				<option value="action">Боевик</option>
+				<option value="western">Вестерн</option>
+				<option value="detective">Детектив</option>
+				<option value="comedy">Комедия</option>
+			</select>
+			<p><select name="product" multiple>
+				<option disabled selected>Выберите любимый продукт</option>
+				<option value="salt">Соль</option>
+				<option value="sugar">Сахар</option>
+				<option value="sugar">Ещё чуть-чуть сахара</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Обратная связь:</legend>
+				<p><textarea name="comment" cols="40" rows="5" placeholder="Как вы относитесь к продукту..."></textarea>
+		</fieldset>
+		<p><input name="get_news" type="checkbox"> я хочу получать e-mail рассылку
+		<p><input type="submit" value="Отправить"/>
+		<input type="reset" value="Очистить"/>
+	</form>
+	</table>

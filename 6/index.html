@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html title="Лабораторная работа №6">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+	<title>Лаба №6. Обработка формы</title>
+	<h2><center>Форма</center></h2>
+	<table width="80%" align="center"><tr><td>
+	<form action="action.php" method="get">
+		<fieldset>
+			<legend>Личная информация:</legend>
+			<table>
+				<tr>
+					<td><label for="email">E-mail: </label>
+					<td><input id="email" type="email" name="email" placeholder="example@mail.com" autocomplete="on" required/>
+				<tr>
+					<td><label for="name">Имя: </label>
+					<td><input id="name" name="name" placeholder="Иван" autocomplete="on" required/>
+				<tr>
+					<td><label for="surname">Фамилия: </label>
+					<td><input id="surname" name="surname" placeholder="Иванов" autocomplete="on" required/>
+				<tr>
+					<td><label for="patronymic">Отчество: </label>
+					<td><input id="patronymic" name="patronymic" placeholder="Иванович" autocomplete="on"/>
+				<tr>
+					<td><label for="birthday">Дата рождения: </label>
+					<td><input id="birthday" type="date" name="birthday" placeholder="01.04.1990" autocomplete="on" required/>
+				<tr><td colspan="2"><select name="gender">
+					<option disabled selected>Укажите пол</option>
+					<option value="men">Мужчина</option>
+					<option value="women">Женщина</option>
+				</select>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>Предпочтения:</legend>
+			<p><select name="genre">
+				<option disabled selected>Выберите любимый жанр</option>
+				<option value="action">Боевик</option>
+				<option value="western">Вестерн</option>
+				<option value="detective">Детектив</option>
+				<option value="comedy">Комедия</option>
+			</select>
+			<p><select name="product[]" multiple>
+				<option disabled selected>Выберите любимый продукт</option>
+				<option value="salt">Соль</option>
+				<option value="sugar">Сахар</option>
+				<option value="plussugar">Ещё чуть-чуть сахара</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Обратная связь:</legend>
+				<p><textarea name="comment" cols="40" rows="5"placeholder="Как вы относитесь к продукту..."></textarea>
+		</fieldset>
+		<p><input name="get_news" type="checkbox"> я хочу получать e-mail рассылку
+		<p><input type="submit" value="Отправить"/>
+		<input type="reset" value="Очистить"/>
+	</form>
+	</table>

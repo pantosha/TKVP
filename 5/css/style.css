@@ -1,0 +1,21 @@
+body {
+	background: #F1F1F1;
+	color: #3E3E3E;
+	font-family: "Trebuchet MS", "Helvetica";
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	background: #C0AE7E;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #FFF;
+}
+
+.container strong {
+	color: #FFF;
+}

@@ -1,30 +1,32 @@
 <?php
-    include('html/header.html');
+define(N, 15);
+define(Q, 3);
+
+include 'my_print_r.php';
+
+// Заполнение массива геометрической прогрессией
+$b = 2;
+for ($i = 0; $i < N; $i++){
+	$geometric[] = $b;
+	$b *= Q;
+}
+
+// Числа Фибоначчи
+$fibonacci[] = $fibonacci[] = 1;
+for($i = 2; $i < N; $i++ ){
+	$fibonacci[] = $fibonacci[$i-1] + $fibonacci[$i-2];
+}
+
+// Объединение массивов в один ассоциативный
+$array = array('geometric' => $geometric, 'fibonacci' => $fibonacci);
 ?>
 
-<form method="post" action="arrays.php">
-    <fieldset>
-        <legend>Генерация массива</legend>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Количество членов:</td>
-                    <td><input id="count" type="number" name="count"/></td>
-                </tr>
-                <tr>
-                    <td>Первый член:</td>
-                    <td><input id="first-member" type="text" name="first-member"/></td>
-                </tr>
-                <tr>
-                    <td>Знаменатель:</td>
-                    <td><input id="denominator" type="text" name="denominator"/></td>
-                </tr>
-            </tbody>
-        </table>
-    </fieldset>
-    <input type="submit" value="Генерировать" name="submit"/>
-</form>
-
-<?php
-    include('html/footer.html');
-?>
+<!DOCTYPE html>
+<html title="Лабораторная работа №9">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<title>Лаба №9. Массивы</title>
+	<h1>Массивы</h1>
+	<div class="container">
+		<?php print_to_html($array); ?>
+	</div>

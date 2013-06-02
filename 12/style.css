@@ -1,0 +1,61 @@
+* {
+	font-family: "Trebuchet MS", "Helvetica";
+}
+
+body {
+	background: #F1F1F1;
+	color: #3E3E3E;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #FFF;
+}
+
+.center_div{
+	display: inline-block;
+	text-align: left;
+}
+
+form{
+	margin: 10px;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+}
+
+.alert{
+	text-align: left;
+	font: status-bar;
+	background: salmon;
+	color: white;
+	padding: 5px;
+}
+
+.container{
+	overflow: hidden;
+	width: 60%;
+	border: 0;
+	background: #C0AE7E;
+	margin: auto;
+}
+
+table{
+	padding: 10px;
+	width: 100%;
+}
+
+th{
+	text-transform: uppercase;
+	background-color: #FFF;
+}
+
+td:nth-last-of-type(1) {
+	text-align: right;
+	width: 20%;
+}
